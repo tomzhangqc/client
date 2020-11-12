@@ -1,6 +1,7 @@
 #!/bin/bash
 image_name=$1
 port=$2
+APP_OPTS='$APP_OPTS'
 if [ -z $image_name ]
 then
 echo "image_name is null"
@@ -22,7 +23,7 @@ date=`date +%Y%m%d%H%M%S`
 /usr/local/bin/docker build -t registry.cn-hangzhou.aliyuncs.com/ceres-spring/$image_name:$date .
 if [ $? -eq 0 ]
 then
-rm -f Dockerfile
+#rm -f Dockerfile
 echo "build success"
 /usr/local/bin/docker push registry.cn-hangzhou.aliyuncs.com/ceres-spring/$image_name:$date
 if [ $? -eq 0 ]
