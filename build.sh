@@ -23,7 +23,7 @@ date=`date +%Y%m%d%H%M%S`
 /usr/local/bin/docker build -t registry.cn-hangzhou.aliyuncs.com/ceres-spring/$image_name:$date .
 if [ $? -eq 0 ]
 then
-#rm -f Dockerfile
+rm -f Dockerfile
 echo "build success"
 /usr/local/bin/docker push registry.cn-hangzhou.aliyuncs.com/ceres-spring/$image_name:$date
 if [ $? -eq 0 ]
