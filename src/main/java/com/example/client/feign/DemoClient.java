@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @date 2020/10/29
  * @description
  */
-@FeignClient(value = "dockertest")
+@FeignClient(value = "server")
 public interface DemoClient {
 
     @PostMapping("/demo")
