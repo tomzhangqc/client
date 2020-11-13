@@ -18,6 +18,6 @@ public class DemoController {
 
     @RequestMapping("/test")
     public String test(){
-        return demoClient.test();
+        return demoClient.test()+"tom";
     }
 }
