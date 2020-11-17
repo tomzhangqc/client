@@ -1,6 +1,9 @@
 spring:
   application:
     name: client
+  data:
+    mongodb:
+      database: bilibili
 server:
   port: 11120
 
