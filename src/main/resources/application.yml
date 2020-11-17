@@ -4,6 +4,7 @@ spring:
   data:
     mongodb:
       database: bilibili
+      host: 10.201.81.232
 server:
   port: 11120
 
